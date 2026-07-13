@@ -46,12 +46,18 @@ $ docker run -d --name my-httpd -p 8080:8080  -p 443:443 \
 ```
 
 NOTE:
-  - This setting use both 8080 and 433 ports for testing. Port 443 is recommended.  
-  - To view log file:  
-    $ docker logs <container_id_or_name>  
-    $ docker logs my-httpd  
+  - This setting use both 8080 and 433 ports for testing. Port 443 is recommended.
   - Check if it works.
     Go to a web browser and enter _http://localhost:8080_ or _https://localhost:443_
+
+
+### Some other commands:  
+```
+$ docker logs <container_id_or_name>      – View httpd log
+  docker logs my-httpd
+$ docker exec -it <containerID> bash      – Go to container shell, for dhi.io/httpd:2.4.68-debian13-dev only
+$ docker cp <containerID>:/container/path/file /host/path/file  – Copy file from container to host system
+```
       
 <br/><br/>
 
