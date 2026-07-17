@@ -4,7 +4,7 @@ This repository is used to create an Apache web server based on Apache [Docker H
 Files provided:  
 - scripts.sh:
   - Pull httpd.conf and httpd-ssl.conf from the container.
-  - You need to modify variables inside the script.sh to approreate modify the httpd.conf and httpd-ssl.cof
+  - You need to modify variables inside the script.sh to approreate modify the httpd.conf and httpd-ssl.conf
   - Create mount directory on the host system
 - Dockerfile:
   - Used to create your own local image. Modify it if neccessary.
