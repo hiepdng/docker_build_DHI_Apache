@@ -55,7 +55,7 @@ NOTE:
 ```
 $ docker logs <container_id_or_name>      – View httpd log
   docker logs my-httpd
-$ docker exec -it <containerID> bash      – Go to container shell, for dhi.io/httpd:2.4.68-debian13-dev only
+$ docker exec -it <containerID>   sh      – Go to container shell, for dhi.io/httpd:2.4.68-debian13-dev only
 $ docker cp <containerID>:/container/path/file /host/path/file  – Copy file from container to host system
 ```
       
